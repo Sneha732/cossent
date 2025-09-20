@@ -38,7 +38,11 @@
   --primary-font: "Barlow", serif;
   --secondary-font: "Prompt", sans-serif;
 }
-
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
 /*--------------------------------------------------------------
 1. Typography
 ----------------------------------------------------------------*/
@@ -9502,7 +9506,7 @@ label span {
   transform: scale(1.2); /* make it 20% bigger */
 }
 .product-image-wrapper.lemon img {
-  transform: scale(1.5); /* only increase lemon size */
+  transform: scale(1); /* only increase lemon size */
 }
 .product-image-wrapper.facewash img  {
   transform: scale(1.6); /* only increase lemon size */
@@ -9538,6 +9542,9 @@ label span {
 }
 .self-care > h3 {
   color: black;
+}
+.section-title{
+  text-align: center;
 }
 .product-card {
   border: none;
@@ -10167,6 +10174,22 @@ label span {
 .cs_product_card.cs_style_3 .cs_product_price,
 .cs_product_card.cs_style_9 .cs_product_price {
   margin-bottom: 0px;
+}
+.product-price{
+  display: flex;
+  align-items: center;
+  gap:4px !important;
+}
+.small-rupee-sign{
+  font-size: 12px !important;
+}
+.fa-indian-rupee-sign{
+  font-size: 20px;
+}
+.small-product-price{
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 .cs_product_card.cs_style_1 .cs_label,
 .cs_product_card.cs_style_3 .cs_label,
@@ -12767,3 +12790,134 @@ label span {
   font-weight: bold;
   color: #fff;
 }
+
+ 
+   .slider-container {
+        position: relative;
+        max-width: 1400px;
+        margin: auto;
+    
+        overflow: hidden;
+      }
+
+      .slider-track {
+        display: flex;
+        transition: transform 0.4s ease-in-out;
+      }
+
+      .item {
+        flex: 0 0 calc(100% / 4); /* 4 per row */
+        padding: 15px;
+        box-sizing: border-box;
+        display: flex; /* ensures equal height columns */
+      }
+
+      .item-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        flex: 1; /* stretch equal height */
+        display: flex;
+        flex-direction: column;
+      }
+
+      .item-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: contain;
+
+        border-radius: 10px;
+      }
+
+      .item-card.lemon img,
+      .item-card.milk img {
+        transform: none !important;
+        margin-top: 0 !important;
+      }
+
+      .item-card h5,
+      .item-card p {
+        flex-shrink: 0;
+        margin: 8px 0;
+      }
+
+      .slider-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: white;
+        color: black;
+        border: 1px solid #d4cece;
+        padding: 10px 18px;
+
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 10;
+      }
+      .slider-btn:hover {
+        background-color: #e61f7f;
+        color: #fff;
+      }
+
+      .slider-btn.left {
+        left: 10px;
+      }
+
+      .slider-btn.right {
+        right: 10px;
+      }
+
+      .btn-addCart {
+        margin-top: auto;
+        display: inline-block;
+        padding: 8px 16px;
+        background: #e61f7f;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+      .btn-addCart:hover {
+        background: #c20560;
+        color: #fff;
+      }
+  @media (max-width: 900px) {
+        .item {
+          flex: 0 0 33%;
+        }
+      }
+      @media (max-width: 768px) {
+        .item {
+          flex: 0 0 50%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .item {
+          flex: 0 0 100%;
+        }
+      }
+
+      .item-card .img-box {
+        width: 100%;
+        height: 220px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+      }
+
+      .item-card .img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+      .img-box.lemon img {
+        margin-top: 0 !important;
+      }
