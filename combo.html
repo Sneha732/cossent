@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 <body>
-     <header
+ <header
       class="cs_site_header cs_style_1 cs_primary_color cs_sticky_header cs_white_bg"
     >
       <div class="cs_top_header cs_primary_bg cs_accent_light_color cs_light">
@@ -91,7 +91,7 @@
           <div class="cs_main_header_in">
             <div class="cs_main_header_left">
               <div class="cs_brand cs_center company_logo">
-                <img src="assets/images/logo.png" alt="brand-img" />
+                <img src="assets/images/logo.png" alt="logo" />
               </div>
             </div>
             <div class="cs_main_header_right">
@@ -130,7 +130,7 @@
                     <span class="cs_cart_label cs_accent_bg cs_white_color"
                       >3</span
                     >
-                    <span>My Bag <b>($54.97)</b></span>
+                    <span>My Bag <b><i class="fa-solid fa-indian-rupee-sign"></i>(54.97)</b></span>
                   </button>
                 </li>
               </ul>
@@ -413,26 +413,31 @@
                         </ul>
                       </li>
                       <li class="menu-item-has-children">
-                        <a href="product-details.html">Product</a>
+                        <a href="#">Product</a>
                         <ul>
                           <li>
-                            <a href="product-details.html"
-                              >Rosewater Hydrating Mist</a
+                            <a href="product-details.html?id=lemon-shampoo"
+                              >Anti-Dandruff + Lemon Shampoo</a
                             >
                           </li>
                           <li>
-                            <a href="product-details-v2.html"
-                              >Silk Lash Extensions</a
+                            <a href="product-details.html?id=argan-shampoo"
+                              >Argan Shampoo</a
                             >
                           </li>
                           <li>
-                            <a href="product-details-v3.html"
-                              >Charcoal Detoxifying Mask</a
+                            <a href="product-details.html?id=apple-facewash"
+                              >Apple Facewash</a
                             >
                           </li>
                           <li>
-                            <a href="product-details-v4.html"
-                              >Vitamin C Serum</a
+                            <a href="product-details.html?id=milk-facewash"
+                              >Milk Facewash</a
+                            >
+                          </li>
+                           <li>
+                            <a href="product-details.html?id=face-scrub"
+                              >Detan Coffee Face Scrub</a
                             >
                           </li>
                         </ul>
@@ -534,12 +539,16 @@
     .product-card:hover {
       box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
     }
-    .product-img {
-      height: 400px;
-      object-fit: contain;
-      
-      
-    }
+ 
+.product-img {
+  max-height: 350px;   /* increase size, bigger than 250px */
+  width: 100%;
+  object-fit: contain; /* keep full image inside box */
+  display: block;
+  margin: 0 auto 15px; /* center + space below */
+}
+
+
    
    
   </style>
@@ -562,24 +571,24 @@
       <div class="col-md-4">
         <div class="product-card">
           <img src="assets/images/shampoo-combo.jpeg" class="product-img img-fluid" alt="Product">
-          <h6 class="mt-3">Shampoo Combo</h6>
-          <p><strong>₹523</strong> <del>₹650</del></p>
+          <h4 class="mt-3">Shampoo Combo</h4>
+          <h5><strong>₹523</strong> <del>₹650</del></h5>
           <button class="btn btn-add">ADD TO CART</button>
         </div>
       </div>
       <div class="col-md-4">
         <div class="product-card">
           <img src="assets/images/facewash-combo.jpeg" class="product-img img-fluid" alt="Product">
-          <h6 class="mt-3">Facewash Combo</h6>
-          <p><strong>₹430</strong> <del>₹599</del></p>
+          <h4 class="mt-3">Facewash Combo</h4>
+          <h5><strong>₹430</strong> <del>₹599</del></h5>
           <button class="btn btn-add">ADD TO CART</button>
         </div>
       </div>
        <div class="col-md-4">
         <div class="product-card">
           <img src="assets/images/lemon-shampoo-combo.jpeg" class="product-img img-fluid" alt="Product">
-          <h6 class="mt-3">Lemon Shampoo Combo</h6>
-          <p><strong>₹600</strong> <del>₹899</del></p>
+          <h4 class="mt-3">Lemon Shampoo Combo</h4>
+          <h5><strong>₹600</strong> <del>₹899</del></h5>
           <button class="btn btn-add">ADD TO CART</button>
         </div>
       </div>
