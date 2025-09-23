@@ -12948,3 +12948,34 @@ label span {
   align-items: center;
   width: 100%;
 }
+
+.cs_site_branding_wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10; 
+}
+
+.cs_site_branding img {
+  max-width: 170px;   
+  height: auto;
+  display: block;
+}
+
+.cs_close_mobile_active {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Push menu down so it doesn't overlap */
+.cs_mobile_show + .your_menu_wrapper {
+  margin-top:
+   70px;  /* adjust so menu starts below logo */
+}
+
+
