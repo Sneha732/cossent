@@ -3698,14 +3698,14 @@ hr {
     margin-bottom: 20px;
   }
 }
-.cs_overlay_filter_widgets .cs_drower_logo {
+/* .cs_overlay_filter_widgets .cs_drower_logo {
   margin-bottom: 60px;
-}
-@media (max-width: 991px) {
+} */
+/* @media (max-width: 991px) {
   .cs_overlay_filter_widgets .cs_drower_logo {
     margin-bottom: 40px;
   }
-}
+} */
 .cs_overlay_filter_widgets .cs_filter_icon {
   position: absolute;
   left: -40px;
@@ -12977,5 +12977,17 @@ label span {
   margin-top:
    70px;  /* adjust so menu starts below logo */
 }
+
+
+
+
+.cs_filter_widgets {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+
+
+
 
 
